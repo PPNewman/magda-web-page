@@ -1,4 +1,6 @@
-* {
+*,
+::before,
+::after {
   -webkit-box-sizing: border-box;
           box-sizing: border-box;
   margin: 0;
@@ -6,6 +8,85 @@
 }
 
 body {
-  background-color: grey;
+  position: relative;
+  background-color: #070101;
+}
+
+.test {
+  height: 100vh;
+}
+
+header {
+  height: 20vh;
+  background-color: #a9b2ca;
+  padding-top: 20px;
+}
+
+header .hero-text {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  height: 100%;
+  padding: 10px;
+  color: #50a050;
+  text-align: center;
+}
+
+header h1 {
+  font-size: 30px;
+  text-transform: uppercase;
+}
+
+header p {
+  font-size: 20px;
+}
+
+nav {
+  text-transform: uppercase;
+}
+
+nav a {
+  color: #d65757;
+}
+
+nav a:hover {
+  color: royalblue;
+}
+
+nav .fa-bars {
+  padding: 10px;
+  color: #d65757;
+}
+
+nav .navbar-brand {
+  font-weight: bold;
+}
+
+@media (min-width: 375px) {
+  header .hero-text h1 {
+    font-size: 34px;
+  }
+  header .hero-text p {
+    font-size: 22px;
+  }
+}
+
+@media (min-width: 768px) {
+  header .hero-text h1 {
+    font-size: 40px;
+  }
+  header .hero-text p {
+    font-size: 28px;
+  }
 }
 /*# sourceMappingURL=main.css.map */

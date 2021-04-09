@@ -1,0 +1,105 @@
+@import '_colors.scss';
+
+*,
+::before,
+::after {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    position: relative;
+    //  dodać font-family: ;
+    background-color: rgb(7, 1, 1);
+    // bgc do zmiany
+}
+
+.test {
+    height: 100vh;
+}
+
+//  HEADER
+
+header {
+    height: 20vh;
+    background-color: $header-bg;
+    padding-top: 20px;
+
+    .hero-text {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        height: 100%;
+        padding: 10px;
+        color: $header-text;
+        text-align: center;
+    }
+
+    h1 {
+        font-size: 30px;
+        text-transform: uppercase;
+    }
+
+    p {
+        font-size: 20px;
+    }
+}
+
+// NAVIGATION
+
+nav {
+
+    text-transform: uppercase;
+
+
+    a {
+        color: $nav-color;
+        // color do zmiany
+    }
+
+    a:hover {
+        color: royalblue;
+        // color do zmiany
+    }
+
+    .fa-bars {
+        padding: 10px;
+        color: $nav-color;
+
+    }
+
+    .navbar-brand {
+        font-weight: bold;
+    }
+
+}
+
+@media (min-width: 375px) {
+    header {
+        .hero-text {
+            h1 {
+                font-size: 34px;
+            }
+
+            p {
+                font-size: 22px;
+            }
+        }
+    }
+}
+
+@media (min-width: 768px) {
+    header {
+        .hero-text {
+            h1 {
+                font-size: 40px;
+            }
+
+            p {
+                font-size: 28px;
+            }
+        }
+    }
+}
