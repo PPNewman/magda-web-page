@@ -12,14 +12,9 @@ body {
   background-color: #070101;
 }
 
-.test {
-  height: 100vh;
-}
-
 header {
-  height: 20vh;
-  background-color: #a9b2ca;
-  padding-top: 20px;
+  height: 150px;
+  background-color: #eef0f5;
 }
 
 header .hero-text {
@@ -37,39 +32,73 @@ header .hero-text {
       -ms-flex-align: center;
           align-items: center;
   height: 100%;
-  padding: 10px;
-  color: #50a050;
+  color: #008a8a;
   text-align: center;
 }
 
 header h1 {
   font-size: 30px;
   text-transform: uppercase;
+  margin-bottom: 0px;
 }
 
 header p {
   font-size: 20px;
+  margin-bottom: 0px;
 }
 
 nav {
+  position: -webkit-sticky;
+  position: sticky;
+  top: 0;
+  height: 50px;
+  background-color: #9c9c9c;
   text-transform: uppercase;
 }
 
-nav a {
-  color: #d65757;
+nav .container {
+  height: 100%;
+}
+
+nav ul {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  height: 100%;
+  margin: 0;
+  padding: 0;
+  list-style: none;
+}
+
+nav ul li {
+  margin: 0 auto;
+}
+
+nav ul li a {
+  text-decoration: none;
+  color: #2b1717;
+  padding: 10px 15px;
 }
 
 nav a:hover {
-  color: royalblue;
+  color: #d81919;
 }
 
-nav .fa-bars {
-  padding: 10px;
-  color: #d65757;
-}
-
-nav .navbar-brand {
-  font-weight: bold;
+.test {
+  width: 100%;
+  height: 400px;
+  background-color: green;
+  margin-top: 300px;
 }
 
 @media (min-width: 375px) {

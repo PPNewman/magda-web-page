@@ -1,4 +1,6 @@
 @import '_colors.scss';
+$gallery-width: 100%;
+$transition-duration: 0.5s;
 
 *,
 ::before,
@@ -11,20 +13,17 @@
 body {
     position: relative;
     //  dodać font-family: ;
-    background-color: rgb(7, 1, 1);
+    background-color: $body;
     // bgc do zmiany
-}
-
-.test {
-    height: 100vh;
 }
 
 //  HEADER
 
 header {
-    height: 20vh;
+    height: 150px;
     background-color: $header-bg;
-    padding-top: 20px;
+    // padding-top: 30px;
+    // padding-bottom: 20px;
 
     .hero-text {
         display: flex;
@@ -32,7 +31,6 @@ header {
         justify-content: center;
         align-items: center;
         height: 100%;
-        padding: 10px;
         color: $header-text;
         text-align: center;
     }
@@ -40,41 +38,70 @@ header {
     h1 {
         font-size: 30px;
         text-transform: uppercase;
+        margin-bottom: 0px;
     }
 
     p {
         font-size: 20px;
+        margin-bottom: 0px;
     }
 }
 
 // NAVIGATION
 
 nav {
-
+    position: sticky;
+    top: 0;
+    height: 50px;
+    background-color: $navbar;
     text-transform: uppercase;
+    // text-align: center;
 
+    .container {
+        height: 100%;
+    }
 
-    a {
-        color: $nav-color;
-        // color do zmiany
+    ul {
+        display: flex;
+        flex-direction: row;
+        justify-content: center;
+        align-items: center;
+        height: 100%;
+        margin: 0;
+        padding: 0;
+        list-style: none;
+
+        li {
+            margin: 0 auto;
+
+            a {
+                text-decoration: none;
+                color: $nav-color;
+                // color do zmiany
+                padding: 10px 15px;
+
+            }
+        }
     }
 
     a:hover {
-        color: royalblue;
+        color: $hover;
         // color do zmiany
     }
 
-    .fa-bars {
-        padding: 10px;
-        color: $nav-color;
-
-    }
-
-    .navbar-brand {
-        font-weight: bold;
-    }
-
 }
+
+
+
+.test {
+    width: 100%;
+    height: 400px;
+    background-color: green;
+    margin-top: 300px;
+}
+
+// GALLERY
+
 
 @media (min-width: 375px) {
     header {
